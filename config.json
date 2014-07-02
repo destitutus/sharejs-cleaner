@@ -1,0 +1,19 @@
+{
+    "redis": {
+        "port": null,
+        "host": null,
+        "options": {
+        },
+        "database": 3,
+        "collection": "codio"
+    },
+
+    "mongo": {
+        "url": "mongodb://localhost:27017/sharejs?auto_reconnect",
+        "collection": "codio",
+        "options": {
+            "safe": true,
+            "cleanupOps": 3600
+        }
+    }
+}

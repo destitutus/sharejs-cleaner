@@ -1,0 +1,36 @@
+#!/usr/bin/env node
+'use strict';
+
+// Set the process title
+process.title = 'sharejs-cleaner';
+
+var optimist = require('optimist')
+.options(
+    'h', {
+        alias : 'help'
+}).options(
+    'v', {
+        alias : 'version'
+}).options(
+    'c', {
+        alias : 'config',
+        string: true
+}).usage('Usage: $0 [-c|--config path to config] [-v|--version]');
+var argv = optimist.argv;
+
+if (argv.h) {
+    console.log(optimist.help());
+    process.exit(0);
+}
+
+var index = require('../index');
+
+if (argv.v) {
+    console.log(index.version);
+    process.exit(0);
+}
+
+var configPath = argv.c || '../config.json';
+var config = require(configPath);
+
+index.clean(config).fin(process.exit);
