@@ -33,4 +33,9 @@ if (argv.v) {
 var configPath = argv.c || '../config.json';
 var config = require(configPath);
 
+
+process.on('uncaughtException', function (err) {
+    console.log(err);
+});
+
 index.clean(config).fin(process.exit);
