@@ -4,18 +4,17 @@
 // Set the process title
 process.title = 'sharejs-cleaner';
 
-var optimist = require('optimist')
-.options(
+var optimist = require('optimist').options(
     'h', {
         alias : 'help'
-}).options(
+    }).options(
     'v', {
         alias : 'version'
-}).options(
+    }).options(
     'c', {
         alias : 'config',
         string: true
-}).usage('Usage: $0 [-c|--config path to config] [-v|--version]');
+    }).usage('Usage: $0 [-c|--config path to config] [-v|--version]');
 
 var argv = optimist.argv;
 
