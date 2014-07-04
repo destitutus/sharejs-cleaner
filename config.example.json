@@ -26,7 +26,7 @@
         "collection": "codio",
         "options": {
             "safe": true,
-            "cleanupOps": 3600
+            "cleanupOps": 1209600
         }
     }
 }
