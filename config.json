@@ -1,4 +1,17 @@
 {
+    "log4js": {
+        "appenders": [
+            {
+                "type": "dateFile",
+                "filename": "sharejs-cleaner.log",
+                "pattern": "-yyyy-MM-dd",
+                "alwaysIncludePattern": false
+            }
+        ],
+        "replaceConsole": true,
+        "level": "TRACE"
+    },
+
     "redis": {
         "port": null,
         "host": null,

@@ -2,7 +2,7 @@
     "name": "sharejs-cleaner",
     "version": "0.0.1",
     "author": "Dmitrii Suchkov <dsuchkov@applicationcraft.com>",
-    "description": "The ShareJS server for Codio.",
+    "description": "The ShareJS cleaner for Codio.",
     "private": true,
     "bin": {
         "sharejs-codio": "./bin/sharejs-cleaner"
@@ -20,6 +20,7 @@
         "async": "0.9.0",
         "hiredis": "0.1.17",
         "lodash": "2.4.1",
+        "log4js": "0.6.14",
         "mongodb": "1.3.23",
         "optimist": "0.6.1",
         "q": "1.0.1",
