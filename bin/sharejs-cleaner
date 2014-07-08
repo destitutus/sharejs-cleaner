@@ -40,4 +40,10 @@ process.on('uncaughtException', function (err) {
     log.error(err);
 });
 
-index.clean(config).fail(log.error).fin(process.exit);
+index.clean(config).then(function () {
+    log.info('cleanup done');
+    process.exit(0);
+}, function (err) {
+    log.error('cleanup error', err);
+    process.exit(1);
+});
