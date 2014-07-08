@@ -5,7 +5,7 @@
     "description": "The ShareJS cleaner for Codio.",
     "private": true,
     "bin": {
-        "sharejs-codio": "./bin/sharejs-cleaner"
+        "sharejs-cleaner": "./bin/sharejs-cleaner"
     },
     "scripts": {
         "start": "./bin/sharejs-cleaner",
