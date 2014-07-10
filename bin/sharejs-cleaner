@@ -37,7 +37,8 @@ logger.configure(config.log4js);
 var log = logger.getLogger('bin');
 
 process.on('uncaughtException', function (err) {
-    log.error(err);
+    log.error('uncaughtException', err);
+    process.exit(2);
 });
 
 index.clean(config).then(function () {

@@ -1,6 +1,6 @@
 {
     "name": "sharejs-cleaner",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "author": "Dmitrii Suchkov <dsuchkov@applicationcraft.com>",
     "description": "The ShareJS cleaner for Codio.",
     "private": true,
